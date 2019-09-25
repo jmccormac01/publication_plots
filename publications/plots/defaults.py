@@ -70,21 +70,26 @@ def general():
        size=AXES_MINOR_TICK_LENGTH,
        width=AXES_LINE_WIDTH)
 
-def one_column():
+def one_by_one():
     """
     One-column-width plot settings
     """
     rc('figure', figsize=(ONE_COL_WIDTH, ONE_COL_WIDTH))
 
-def two_column():
+def two_by_one():
+    """
+    One-column-width by two-column-width plot
+    """
+    rc('figure', figsize=(TWO_COL_WIDTH, ONE_COL_WIDTH))
+
+def two_by_two():
     """
     Two-column-width plot settings
     """
     rc('figure', figsize=(TWO_COL_WIDTH, TWO_COL_WIDTH))
 
-def two_column_thin():
+def one_by_two():
     """
     Two-column-width plot settings
     """
-    rc('figure', figsize=(TWO_COL_WIDTH, TWO_COL_WIDTH/4.))
-
+    rc('figure', figsize=(TWO_COL_WIDTH, ONE_COL_WIDTH))
