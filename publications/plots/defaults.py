@@ -72,24 +72,30 @@ def general():
 
 def one_by_one():
     """
-    One-column-width plot settings
+    one tall by one wide
     """
     rc('figure', figsize=(ONE_COL_WIDTH, ONE_COL_WIDTH))
 
 def two_by_one():
     """
-    One-column-width by two-column-width plot
+    two tall by one wide
     """
-    rc('figure', figsize=(TWO_COL_WIDTH, ONE_COL_WIDTH))
+    rc('figure', figsize=(ONE_COL_WIDTH, ONE_COL_WIDTH*1.8))
 
 def two_by_two():
     """
-    Two-column-width plot settings
+    two tall by two wide
     """
     rc('figure', figsize=(TWO_COL_WIDTH, TWO_COL_WIDTH))
 
 def one_by_two():
     """
-    Two-column-width plot settings
+    one tall by two wide
     """
     rc('figure', figsize=(TWO_COL_WIDTH, ONE_COL_WIDTH))
+
+def three_by_one():
+    """
+    three tall by one wide
+    """
+    rc('figure', figsize=(ONE_COL_WIDTH, ONE_COL_WIDTH*2.7))
